@@ -1,3 +1,4 @@
+
 :root {
     --primary: #2E2E2E;
     --login-btn-color: #8CBB77;
@@ -10,6 +11,7 @@
     --half-orange: #FF9F32;
     --border-light: #D6D6D2;
     --red: #C61313;
+    --light-red: #CE413F;
     --adm-box-bg-color: #9C9C9C;
     --light-dark: #706F68;
     --soft-light-dark: #99988F;
@@ -182,12 +184,14 @@ header {
         .image-holder {
             height: 70%;
             width: 100px;
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
         }
+
         .main-button {
             width: 60%;
             padding: 7px 20px;
@@ -267,10 +271,12 @@ header {
             background-repeat: no-repeat;
             background-size: cover;
         }
-        .first-bg{
+
+        .first-bg {
             background: var(--news-card-first-bg);
         }
-        a{
+
+        a {
             color: var(--half-orange);
             font-weight: 700;
         }
@@ -297,31 +303,127 @@ header {
         }
     }
 
-    .content-container{
+    .content-container {
         border: 1px solid var(--login-input-border);
-        .hot-button{
+
+        .hot-button {
             background: var(--orange);
         }
-        .campaign-card{
-            .col-md-8{
-                p{
+
+        .campaign-card {
+            .col-md-8 {
+                p {
                     font-size: 14px;
                 }
-                a{
+
+                a {
                     color: var(--success-solid);
                     font-size: 14px;
                 }
             }
         }
-        .camp-card-1{
+
+        .camp-card-1 {
             background: var(--camp-car-1-bg);
-        }.camp-card-2{
+        }
+
+        .camp-card-2 {
             background: var(--camp-car-2-bg);
         }
-        .camp-card-3{
+
+        .camp-card-3 {
             background: var(--camp-car-3-bg);
         }
     }
 }
 
 /* 3rd PAGE */
+
+/* 4th page  */
+
+.main-container {
+    /* margin: 0; */
+    padding: 0;
+    .admin-box {
+        .admin-butotn {
+            background: var(--success-solid);
+            font-size: 16px;
+        }
+        .avtar-card{
+            overflow: hidden;
+            height: 120px;
+            background: var(--adm-box-bg-color);
+            .col-md-2{
+                /* width: 40px; */
+            }
+            .image-holder{
+                height: 140px;
+                position: relative;
+               img{
+                position: absolute;
+                top: -20px;
+               }
+            }
+            .avtar-details{
+                .avtar-name{
+                    font-size: 16px;
+                    strong{
+                        color: var(--orange);
+                    }
+                }
+                img{
+                    top: -10px;
+                }
+            }
+        }
+    }
+    .admin-box:nth-child(2){
+        .admin-butotn{
+            background: var(--half-orange);
+            font-size: 16px;
+        }
+    }
+
+    .section-col-5{
+        .admin-box{
+            .admin-button{
+                width: 100%;
+                background: var(--success-solid);
+                color: white;
+                font-size: 16px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            img{
+                top: 50px;
+            }
+            p{
+                width: 92%;
+            }
+        }
+
+        .community-card{
+            .community-button{
+                background: var(--orange);
+                color: white;
+                font-size: 16px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+            img{
+                top: 50px;
+            }
+            p{
+                width: 92%;
+            }
+            &:nth-child(3){
+                .community-button{
+                    background: var(--light-red);
+                }
+            }
+        }
+    }
+}
+
+/* 4th page  */
